@@ -809,7 +809,7 @@ switch (opc){
              }
 
         } while (opc!=3);
-        System.out.println("Hasta pronto ");
+        System.out.println("Hasta pronto :)");
     }
     // METODO QUE IMRPIME LAS PAREDES Y LAS TRAMPAS
     public static void partra(String luis[][],int m,int g,int f,String h){
