@@ -141,6 +141,7 @@ switch (opc){
                         nuevap= entrada.next();
                         //identifica la posición del tablero
 
+
                         switch (nuevap){
 
                             //Movimiento hacia arriba
@@ -261,7 +262,9 @@ switch (opc){
                                 }
                                 break; //FINALIZA EL MOVIMIENTO HACIA ABAJO
 
+
                             //Movimiento a la derecha
+
                             case "6":
                                 tablerop[posicionf][posicionc]="  ";
                                 posant=posicionc;
@@ -318,7 +321,9 @@ switch (opc){
                                 }
                                 break;
 
+
                             //Movimiento a la izquierda
+
 
                             case "4":
                                 tablerop[posicionf][posicionc]="  ";
@@ -375,6 +380,9 @@ switch (opc){
                                     tablerop[posicionf][posicionc]="< ";
                                 }
                                 break;
+
+                                //PAUSA
+
                             case "F":
                                 System.out.println("-----PAUSA-------");
                                 System.out.println("1.Reanudar juego");
@@ -386,6 +394,8 @@ switch (opc){
                                 }
                         }
 
+
+//LINEAMIENTOS PARA FINALIZAR EL JUEGO
 
                         if (cantpre==0){
                             salida=false;
@@ -468,6 +478,7 @@ switch (opc){
 
                     //termina de recorrer los espacios del tablero
 
+
                     //INICIA EL ARREGLO DE LOS PREMIOS
                     premios(tablerog,cantpre,10,10);
 
@@ -499,6 +510,9 @@ switch (opc){
                         posicionc=entrada.nextInt();
                     }
                     tablerog[posicionf][posicionc]="< ";
+
+                    //INICIA EL CICLO DE LOS MOVIMIENTOS
+
                     while (salida) {
                         System.out.println("-----------------------");
                         System.out.println("USUARIO:"+nombre1);
@@ -632,7 +646,10 @@ switch (opc){
                                 }
                                 break; //FINALIZA EL MOVIMIENTO HACIA ABAJO
 
+
                             //Movimiento a la derecha
+
+
                             case "6":
                                 tablerog[posicionf][posicionc]="  ";
                                 posicionc=posicionc+1;
@@ -687,6 +704,8 @@ switch (opc){
                                     tablerog[posicionf][posicionc]="< ";
                                 }
                                 break;
+
+
                               //Movimiento a la izquierda
 
                             case "4":
@@ -754,6 +773,8 @@ switch (opc){
                                     salida=false;
                                 }
                         }
+
+                        // LINEAMIENTOS PARA FINALIZAR EL JUEGO
                         if (cantpre==0){
                             salida=false;
                             System.out.println("Felicidades has ganado ✪");
@@ -766,7 +787,8 @@ switch (opc){
                                 }
                                 System.out.println();
                             }
-                        } if (vidas==0){
+                        }
+                        if (vidas==0){
                             salida=false;
                             System.out.println("Fin del juego, has perdido todas las vidas ☣");
                             System.out.println("USUARIO:"+nombre1);
@@ -805,12 +827,14 @@ switch (opc){
 
 
         }
-
+break;
              }
 
         } while (opc!=3);
-        System.out.println("Hasta pronto ...");
+        System.out.println("Hasta pronto usuario, gracias por jugar");
     }
+
+
     // METODO QUE IMRPIME LAS PAREDES Y LAS TRAMPAS
     public static void partra(String luis[][],int m,int g,int f,String h){
         int paredx=1;
@@ -832,6 +856,7 @@ switch (opc){
 
     }
     //FINALIZA LAS PAREDES Y LAS TRAMPAS
+
 
     //METODO QUE IMPRIME PREMIOS
     public static void premios(String luis[][],int m,int g,int f){
