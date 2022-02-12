@@ -128,6 +128,7 @@ switch (opc){
                     }
                     tablerop[posicionf][posicionc]="< ";
                     while (salida) {
+                        System.out.println("----------------------");
                         System.out.println("USUARIO:"+nombre1);
                         System.out.println("PUNTEO:"+punteo);
                         System.out.println("VIDAS:"+vidas);
@@ -499,6 +500,7 @@ switch (opc){
                     }
                     tablerog[posicionf][posicionc]="< ";
                     while (salida) {
+                        System.out.println("-----------------------");
                         System.out.println("USUARIO:"+nombre1);
                         System.out.println("PUNTEO:"+punteo);
                         System.out.println("VIDAS:"+vidas);
@@ -575,7 +577,6 @@ switch (opc){
 
                             case "5":
                                 tablerog[posicionf][posicionc]="  ";
-                                posant=posicionf;
                                 posicionf=posicionf+1;
                                 if (tablerog[posicionf][posicionc].equals("X ")){
                                     pospar=posicionf;
@@ -634,7 +635,6 @@ switch (opc){
                             //Movimiento a la derecha
                             case "6":
                                 tablerog[posicionf][posicionc]="  ";
-                                posant=posicionc;
                                 posicionc=posicionc+1;
                                 if (tablerog[posicionf][posicionc].equals("X ")){
                                     pospar=posicionc;
